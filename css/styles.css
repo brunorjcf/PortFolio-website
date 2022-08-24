@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap');
 
 :root{
-    --yellow: #f9ca24;
+    --green: rgb(40, 187, 114);
 }
 
 *{
@@ -17,7 +17,7 @@
 }
 
 *::selection{
-    background: var(--yellow);
+    background: var(--green);
     color: #333;
 }
 
@@ -35,7 +35,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background: var(--yellow);
+    background: var(--green);
 }
 
 body{
@@ -65,7 +65,7 @@ section{
 }
 
 .btn:hover{
-    background: var(--yellow);
+    background: var(--green);
 }
 
 .heading{
@@ -78,7 +78,7 @@ section{
 }
 
 .heading span{
-    color: var(--yellow);
+    color: var(--green);
 }
 
 header{
@@ -102,7 +102,7 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: .7rem solid var(--yellow);
+    border: .7rem solid var(--green);
 }
 
 header .user .name{
@@ -135,7 +135,7 @@ header .navbar ul li a{
 }
 
 header .navbar ul li a:hover{
-    background: var(--yellow);
+    background: var(--green);
 }
 
 #menu{
@@ -170,7 +170,7 @@ header .navbar ul li a:hover{
 
 .home h1 span{
     font-size: 5rem;
-    color: var(--yellow);
+    color: var(--green);
 }
 
 .home p{
@@ -202,7 +202,7 @@ header .navbar ul li a:hover{
 
 .sobre .row .infor h3{
     font-size: 2rem;
-    color: var(--yellow);
+    color: var(--green);
     padding: 1rem 0;
     font-weight: normal;
 }
@@ -222,7 +222,7 @@ header .navbar ul li a:hover{
 
 .sobre .row .counter .box span{
     font-size: 2rem;
-    color: var(--yellow);
+    color: var(--green);
 }
 
 .sobre .row .counter .box{
@@ -279,7 +279,7 @@ header .navbar ul li a:hover{
     text-align: center;
     font-size: 2rem;
     color: #fff;
-    background: var(--yellow);
+    background: var(--green);
 }
 
 .portfolio .box-container{
@@ -367,7 +367,7 @@ header .navbar ul li a:hover{
 
 .contato .row .content .infor h3{
     padding-right: 1rem;
-    color: var(--yellow);
+    color: var(--green);
 }
 
 .top{
