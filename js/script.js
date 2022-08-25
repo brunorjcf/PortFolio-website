@@ -15,7 +15,7 @@ $(document).ready(function(){
             if($(windows).scrollTop() > 0){
                 $('.top').show();
             }else{
-                $('.top').hidden();
+                $('.top').hide();
             }
         });
 

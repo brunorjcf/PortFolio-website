@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap');
 
 :root{
-    --green: rgb(40, 187, 114);
+    --blue: rgb(62, 40, 187);
 }
 
 *{
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none; 
     outline: none;
     border: none;
     text-transform: capitalize;
@@ -17,7 +17,7 @@
 }
 
 *::selection{
-    background: var(--green);
+    background: var(--blue);
     color: #333;
 }
 
@@ -31,15 +31,15 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background: #222;
+    background: rgb(34, 34, 34);
 }
 
 html::-webkit-scrollbar-thumb{
-    background: var(--green);
+    background: var(--blue);
 }
 
 body{
-    background: #111;
+    background: rgb(17, 17, 17);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -65,7 +65,7 @@ section{
 }
 
 .btn:hover{
-    background: var(--green);
+    background: var(--blue);
 }
 
 .heading{
@@ -78,7 +78,7 @@ section{
 }
 
 .heading span{
-    color: var(--green);
+    color: var(--blue);
 }
 
 header{
@@ -102,7 +102,7 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: .7rem solid var(--green);
+    border: .7rem solid var(--blue);
 }
 
 header .user .name{
@@ -135,7 +135,19 @@ header .navbar ul li a{
 }
 
 header .navbar ul li a:hover{
-    background: var(--green);
+    background: var(--blue);
+}
+
+.fab, .far {
+    font-weight: 400;
+    width: 2rem;
+    color: #3e28bb;
+    margin: 2vh;
+    font-size: 3rem;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
 }
 
 #menu{
@@ -170,7 +182,7 @@ header .navbar ul li a:hover{
 
 .home h1 span{
     font-size: 5rem;
-    color: var(--green);
+    color: var(--blue);
 }
 
 .home p{
@@ -202,7 +214,7 @@ header .navbar ul li a:hover{
 
 .sobre .row .infor h3{
     font-size: 2rem;
-    color: var(--green);
+    color: var(--blue);
     padding: 1rem 0;
     font-weight: normal;
 }
@@ -222,7 +234,7 @@ header .navbar ul li a:hover{
 
 .sobre .row .counter .box span{
     font-size: 2rem;
-    color: var(--green);
+    color: var(--blue);
 }
 
 .sobre .row .counter .box{
@@ -279,7 +291,7 @@ header .navbar ul li a:hover{
     text-align: center;
     font-size: 2rem;
     color: #fff;
-    background: var(--green);
+    background: var(--blue);
 }
 
 .portfolio .box-container{
@@ -334,6 +346,7 @@ header .navbar ul li a:hover{
     padding: 1.5rem;
     margin: 1rem 0;
     background: #333;
+    border-radius: 1rem;
     color: #fff;
     text-transform: none;
     font-size: 1.7rem;
@@ -367,7 +380,7 @@ header .navbar ul li a:hover{
 
 .contato .row .content .infor h3{
     padding-right: 1rem;
-    color: var(--green);
+    color: var(--blue);
 }
 
 .top{
