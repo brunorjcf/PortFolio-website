@@ -383,8 +383,7 @@ header .navbar ul li a:hover{
     color: var(--blue);
 }
 
-.top{
-    position: fixed;
+#top{   
     bottom: 7.5rem;
     right: 2rem;
     z-index: 100;

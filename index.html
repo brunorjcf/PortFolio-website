@@ -31,9 +31,11 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            <a alt="#" href="https://github.com/brunorjcf"><i class="fab fa-github"></i></a>
-            <a alt="#" href="https://www.facebook.com/bruno.s.santos.RJ"><i class="fab fa-facebook"></i></a>
-            <a alt="#" href="https://www.instagram.com/bruno.santosrj/"><i class="fab fa-instagram"></i></a>
+            <ul>
+                <a href="https://github.com/brunorjcf" alt="#"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/bruno.santosrj/" alt="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/bruno.s.santos.RJ" alt="#"><i class="fab fa-facebook"></i></a>
+            </ul>
         </nav>
 
     </header>
@@ -46,8 +48,8 @@
      <section class="home" id="home">
         <h3>Seja bem-vinda(o)!</h3>
         <h1>Me chamo <span>Bruno Santos</span></h1>
-        <p>Sou desenvolvedor front end e back end com mais de três anos de
-            Experiência com programação nível Júnior. Apaixonado por tecnologias e internet das coias.
+        <p>Sou desenvolvedor fullStack developer com mais de três anos de
+            Experiência com programação. Apaixonado por tecnologias e internet das coias.
             <i class="fas fa-heartbeat"></i>
             <br />
             <br />
@@ -72,7 +74,8 @@
                 <h3> <span> idade : </span> 35 </h3>
                 <h3> <span> tempo de experiência : </span>  +3 anos </h3>
                 <h3> <span> experiência : </span> front-end developer / back-end developer </h3>
-                <h3> <span> idioma : </span> inglêns Intermediário</h3>
+                <h3> <span> idioma : </span> inglêns Intermediário(obs: estudando a fluência na
+                escola online impulse)</h3> 
                 <a href="BrunoCV-PT.pdf"><button class="btn"> download CV <i class="fas fa-download"></i></button></a>
             </div>
 
@@ -88,12 +91,7 @@
                 </div>
 
                 <div class="box">
-                    <span>+10</span>
-                    <h3>clientes satisfeitos</h3>
-                </div>
-
-                <div class="box">
-                    <span>+15</span>
+                    <span>+5</span>
                     <h3>projetos de alta demanda</h3>
                 </div>
             </div>
@@ -110,14 +108,17 @@
                 <i class="fas fa-graduation-cap"></i>
                 <span>10/02/18 até 05/08/20</span>
                 <h3>Análise e desenvolvimento de sistemas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, velit!</p>
+                <p>Sou profissional capaz de desenvolver, analisar, projetar, implementar e atualizar sistemas de informação para diversos setores de atividades.</p>
             </div>
 
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
                 <span>10/08/20 até 05/09/21</span>
                 <h3>seguranã da informação</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, velit!</p>
+                <p>Sou profissional capaz de asegurar a segurança de sites a níbel básico com capacidade em 
+                    Gestão da Segurança da Informação, Ética e legislação em tecnologia da informação, Pareceres e Testes de Invasão,
+                    Segurança de Sistemas Operacionais, Segurança em Redes de Computadores.
+                </p>
             </div>
         </div>
 
@@ -142,7 +143,14 @@
                 <i class="fas fa-graduation-cap"></i>
                 <span>2 mêses de curso</span>
                 <h3>web design express</h3>
-                <p>UX/UI, Layout, HTML5, CSS3, Design Responsivo, Tipografia </p>
+                <p>UX/UI, Photoshop, Layout, HTML5, CSS3, Design Responsivo, Tipografia </p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>6 mêses de curso</span>
+                <h3>desenvolvimento android 2022(estudando)</h3>
+                <p>Layouts, Interfaces do Usuário, Programação Java, Componentes de Interfaces, e Criação de Apps </p>
             </div>
 
             <div class="box">
@@ -151,20 +159,17 @@
                 <h3>PHP JEDI</h3>
                 <p>Lógica de Progamação,MVC e Rotas, Banco de dados e PHP, Laravel, PHP Orientado a Objetos, Composer, PHP7, Frameworks</p>
             </div>
-            
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>6 mêses de curso</span>
-                <h3>Java</h3>
-                <p>O.O.P, </p>
-            </div>
 
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
                 <span>3 mêses de curso</span>
-                <h3>c#</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, velit!</p>
+                <h3>Linux LPI</h3>
+                <p>(LPI102) stdin, stdout, stderr, Noções de segurança - quem está conectado à máquina
+                   e será que estão tentado invadi-la, Logs e métodos para ver se estão tentando
+                   invadir a nossa máquina...
+                </p>
             </div>
+    
         </div>  
     </section>
     <!-- section formação ENDS-->
@@ -214,28 +219,43 @@
 
             </div>
 
-            <form action="">
+            <form onsubmit="sendEmail(); reset(); return false;">
 
-                <input type="text" placeholder="Nome" class="box">
-                <input type="email" placeholder="E-mail" class="box">
-                <input type="text" placeholder="Assunto" class="box">
-                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Messagem"></textarea>
+                <input type="text" id="name"  placeholder="Nome" class="box">
+                <input type="email" id="email" placeholder="E-mail" class="box">
+                <textarea id="message" cols="30" rows="10" class="box message" placeholder="Messagem"></textarea>
                 <button type="submit" class="btn"> enviar <i class="fas fa-paper-plane"></i> </button>
+            
             </form>
         </div>
     </section>
     <!-- section contato ENDS-->
 
     <!-- scroll top button -->
-
     <a href="#home" class="top">
-        <img src="images/scroll-top-img.png" alt="#">
+        <img src="images/scroll-top-img.png" alt="#"> 
     </a>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script> 
+        function sendEmail(){
+            Email.send({
+                Host : "smt.gmail.com",
+                Username : "brunocf@gmail.com",
+                To : 'brunorjcf@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Equiry",
+                Body : "Email agoraaaaa"
+            }).then(
+                message => alert(message ola)
+            );
+        }
+    </script>
 
     <!-- jquery cdn link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- custom is file link -->
     
+     <!-- custom is file link -->
     <script src="js/script.js"></script>
 </body>
 </html>
