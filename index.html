@@ -70,12 +70,12 @@
         <div class="row">
 
             <div class="infor">
-                <h3><span> nome : </span> Bruno Santos </h3>
-                <h3> <span> idade : </span> 35 </h3>
-                <h3> <span> tempo de experiência : </span>  +3 anos </h3>
-                <h3> <span> experiência : </span> front-end developer / back-end developer </h3>
-                <h3> <span> idioma : </span> inglêns Intermediário(obs: estudando a fluência na
-                escola online impulse)</h3> 
+                <h3><span> name : </span> Bruno Silva dos Santos </h3>
+                <h3> <span> age : </span> 35 </h3>
+                <h3> <span> years of experience : </span>  +3 anos </h3>
+                <h3> <span> experience : </span> front-end developer / back-end developer </h3>
+                <h3> <span> language : </span> inglêns Intermediário <br/> obs: estudando a fluência na
+                escola online impulse</h3> 
                 <a href="BrunoCV-PT.pdf"><button class="btn"> download CV <i class="fas fa-download"></i></button></a>
             </div>
 
@@ -213,20 +213,20 @@
                 <div class="infor">
                     <h3><i class="fas fa-envelope"> brunorjcf@gmail.com</i></h3>
                     <h3><i class="fas fa-phone"> +55(22)999-160608</i></h3>
-                    <h3><i class="fas fa-phone"> +55(22)2643-3568</i></h3>
                     <h3><i class="fas fa-map-marker-alt"> Cabo Frio, RJ - CEP:28909-250</i></h3>
                 </div>
 
             </div>
 
-            <form onsubmit="sendEmail(); reset(); return false;">
-
-                <input type="text" id="name"  placeholder="Nome" class="box">
-                <input type="email" id="email" placeholder="E-mail" class="box">
-                <textarea id="message" cols="30" rows="10" class="box message" placeholder="Messagem"></textarea>
+            <form action="https://formspree.io/f/myyvzllw" method="POST">
+                
+                <input type="text" name="Name"  placeholder="Nome" class="box">
+                <input type="email" name="Email" placeholder="E-mail" class="box">
+                <textarea name="Message" cols="30" rows="10" class="box message" placeholder="Messagem"></textarea>
                 <button type="submit" class="btn"> enviar <i class="fas fa-paper-plane"></i> </button>
             
             </form>
+          
         </div>
     </section>
     <!-- section contato ENDS-->
@@ -234,23 +234,7 @@
     <!-- scroll top button -->
     <a href="#home" class="top">
         <img src="images/scroll-top-img.png" alt="#"> 
-    </a>
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script> 
-    <script> 
-        function sendEmail(){
-            Email.send({
-                Host : "smt.gmail.com",
-                Username : "brunocf@gmail.com",
-                To : 'brunorjcf@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Contact Form Equiry",
-                Body : "Email agoraaaaa"
-            }).then(
-                message => alert(message ola)
-            );
-        }
-    </script>
+    </a>  
 
     <!-- jquery cdn link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
